@@ -1,0 +1,70 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --background-color: rgba(17,29,94,1);
+  --grey-color: #eeeeee;
+  --charcoal-color: #36454f;
+  --bronze-color: #cc6633;
+  --silver-color: #C0C0C0;
+  --golden-color: #DAA520;
+}
+
+html{
+  font-size: 62,5%;
+}
+
+body{
+  max-width:
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  background-color: var(--grey-color);
+}
+
+/* Nav links */
+.topnav {
+  display: flex;
+  list-style-type: none;
+  background-color: var(--charcoal-color);
+  overflow: hidden;
+}
+.topnav li {
+  text-align: center;
+  padding: 13px 16px;
+  font-size: 17px;
+}
+.topnav li:hover {
+  background-color: var(--silver-color);
+  color: black;
+}
+.topnav li.active {
+  background-color: var(--golden-color);
+  color: var(--grey-color);
+}
+.topnav a{
+  text-decoration: none;
+  color: white;
+}
+.right{
+  position: absolute;
+  right: 0;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.listItem{
+  border: 4px solid var(--charcoal-color);
+  border-radius: 2px;
+  margin: 0.1em;
+  padding: 0.1em;
+  overflow: hidden;
+}
+
+.playing-item{
+  background-color: var(--silver-color);
+}
